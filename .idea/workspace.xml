@@ -29,8 +29,8 @@
         <entry file="file://$PROJECT_DIR$/readme.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="15">
-                <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+              <first_editor relative-caret-position="30">
+                <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
               </first_editor>
               <second_editor />
             </state>
@@ -437,6 +437,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Http/Controllers/Service" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -505,15 +506,16 @@
       <workItem from="1566872468034" duration="12354000" />
       <workItem from="1566976696651" duration="5749000" />
       <workItem from="1567043740554" duration="8856000" />
-      <workItem from="1567133140198" duration="9975000" />
+      <workItem from="1567133140198" duration="10466000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81340000" />
+    <option name="totallyTimeSpent" value="81831000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="220" y="30" width="1184" height="814" extended-state="1" />
+    <frame x="220" y="30" width="1184" height="814" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3563923" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -866,8 +868,8 @@
     <entry file="file://$PROJECT_DIR$/readme.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="15">
-            <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+          <first_editor relative-caret-position="30">
+            <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
           </first_editor>
           <second_editor />
         </state>
