@@ -99,7 +99,12 @@
     <div class="weui_cells">
         <div class="weui_cell">
 
+            @if($pdt_content != null)
                 {!! $pdt_content->content!!}
+                @else
+                @endif
+
+
 
         </div>
     </div>
@@ -110,7 +115,7 @@
             <bottom class="weui_btn weui_btn_primary" onclick="_addCart();">加入购物车</bottom>
         </div>
         <div class="bk_half_area">
-            <bottom class="weui_btn weui_btn_default" >结算<span id="cart_num" class="m3_price">{{$count}}</span></bottom>
+            <bottom class="weui_btn weui_btn_default" onclick="_toCart();" >查看购物车<span id="cart_num" class="m3_price">{{$count}}</span></bottom>
         </div>
 
     </div>
@@ -172,6 +177,9 @@
                     console.log(error);
                 }
             });
+        }
+        function _toCart(){
+            location.href = '/cart';
         }
     </script>
 @endsection

@@ -119,7 +119,7 @@
               }
               if(data.status != 0) {
                   $('.bk_toptips').show();
-                  $('.bk_toptips span').html(data.message);
+                  $('.bk_toptips span').html('验证码错误');
                   setTimeout(function() {$('.bk_toptips').hide();}, 2000);
                   return;
               }
@@ -127,7 +127,7 @@
               $('.bk_toptips').show();
               $('.bk_toptips span').html('登录成功');
               setTimeout(function() {$('.bk_toptips').hide();}, 2000);
-              location.href = "/category";
+              location.href = "{{$return_url}}";
           },
           error: function(xhr, status, error) {
               console.log(xhr);
