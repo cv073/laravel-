@@ -37,8 +37,8 @@ class BookController extends Controller
 
         $member = $request->session()->get('member','');
         if($member != '') {
-            $cart = Cart::where('member_id', $member->id)->first();
-            $cart_items = CartItem::where('cart_id', $cart->id)->get();
+
+            $cart_items = CartItem::where('member_id', $member->id)->get();
 
             foreach ($cart_items as $cart_item) {
                 if ($cart_item->product_id == $product_id) {

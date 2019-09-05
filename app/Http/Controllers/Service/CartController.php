@@ -37,6 +37,7 @@ class CartController extends Controller
 
            if($exist == false) {
                $cart_item = new CartItem;
+
                $cart_item->product_id = $product_id;
 
                $cart_item->count = 1;

@@ -17,6 +17,10 @@ Route::get('/', function () {
     return view('login');
 
 });
+Route::get('/pay', function () {
+    return view('alipay');
+
+});
 
 
 Route::get('/login', 'View\MemberController@toLogin');
@@ -38,10 +42,22 @@ Route::group(['prefix' => 'service'],function(){
     Route::get('category/parent_id/{parent_id}','Service\BookController@getCategoryByParentId');
     Route::get('cart/add/{product_id}','Service\CartController@addCart');
     Route::get('deleteCart','Service\CartController@deleteCart');
+    Route::post('pay','Service\PayController@alipay');
+    Route::post('pay/notify','Service\PayController@aliNotify');
+    Route::get('pay/call_back','Service\PayController@aliResult');
+    Route::get('pay/merchant','Service\PayController@aliMerchant');
+
+
+    Route::get('wxpay','Service\PayController@wxPay');
+    Route::get('openid/get','Service\PayController@getOpenid');
+
+
 });
 
 Route::group(['middleware' => 'check.login'],function(){
-    Route::get('/order_pay','View\OrderController@toOrderPay');
+    Route::post('/order_commit','View\OrderController@toOrderCommit');
+    Route::get('/order_list','View\OrderController@toOrderList');
+
 });
 
 
